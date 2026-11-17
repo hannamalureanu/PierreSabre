@@ -11,8 +11,8 @@ public class Ronin extends Humain {
 	public void donner(Commercant beneficiaire) {
 		int somme = argent / 10;
 		perdreArgent(somme);
-		beneficiaire.recevoir(somme);
 		parler(beneficiaire.getNom() + " prend ces " + somme + " sous.");
+		beneficiaire.recevoir(somme);
 	}
 
 	public void provoquer(Yakuza adversaire) {
